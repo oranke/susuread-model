@@ -1,0 +1,9 @@
+# Model files are published as Release assets only. They never go into git history.
+*.onnx
+*.bin
+*.tar.bz2
+*.tar
+*.zip
+
+# Local working folder for preparing release uploads
+staging/

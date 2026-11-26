@@ -1,0 +1,5 @@
+# Text files use LF in the repository.
+* text=auto eol=lf
+
+# LICENSE must stay byte-identical to the upstream copy (sha256 0d944a91...c2275e9f).
+LICENSE -text

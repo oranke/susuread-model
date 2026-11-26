@@ -1,0 +1,82 @@
+susuread-model — NOTICE
+
+This repository redistributes model files derived from Supertonic 3.
+It contains no source code.
+
+
+1. Model and copyright
+
+   Supertonic 3
+   Copyright (c) 2026 Supertone Inc.
+   Licensed under the BigScience Open RAIL-M License dated August 18, 2022.
+   The full license text is in the file LICENSE.
+
+   Original model: https://huggingface.co/Supertone/supertonic-3
+   The LICENSE file in this repository is an unchanged copy of
+   https://huggingface.co/Supertone/supertonic-3/resolve/main/LICENSE
+   (sha256 0d944a9110fed9a9602d60e0423a272903e7bd21ab060490774efc77c2275e9f,
+   repository revision 3cadd1ee6394adea1bd021217a0e650ede09a323, checked 2026-11-26).
+
+
+2. Modified files (license paragraph 4(c))
+
+   The model files in this repository are NOT the files that Supertone Inc.
+   published. Supertone publishes fp32 ONNX files (onnx/*.onnx,
+   onnx/unicode_indexer.json, voice_styles/*.json).
+
+   The files here are int8 ONNX files and a binary indexer distributed by the
+   sherpa-onnx project (k2-fsa) in this bundle:
+
+     https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/sherpa-onnx-supertonic-3-tts-int8-2026-05-11.tar.bz2
+     128,774,318 bytes
+     sha256 82fa96f91c4ef8abaae3a14a3f4153facf88bed821d1f7331cec2700f432c427
+     downloaded 2026-11-16
+
+   These files differ from Supertone's published files. They are
+   "Derivatives of the Model" under the license:
+
+     duration_predictor.int8.onnx
+     text_encoder.int8.onnx
+     vector_estimator.int8.onnx
+     vocoder.int8.onnx
+     unicode_indexer.bin
+     voice.bin                      (inside the archived bundle only)
+
+   tts.json is also taken from the same bundle.
+
+   The maintainers of this repository did not change any of these files.
+   Every file is a byte-for-byte copy of the file in the bundle above.
+   SHA256SUMS lists the hash of every file.
+
+
+3. Use-based restrictions (license paragraphs 4(a) and 5)
+
+   Anyone who uses or redistributes these files must follow paragraph 5 and
+   Attachment A of the LICENSE. Paragraph 5 forbids the uses listed in
+   Attachment A. Anyone who redistributes these files must include the same
+   restrictions as an enforceable provision in their own terms, and must pass
+   them on to their users.
+
+   Attachment A (e) forbids generating or distributing content without
+   expressly and intelligibly disclaiming that it is machine generated.
+   Speech made with this model is machine-generated content.
+
+
+4. Licenses that do NOT apply to the model
+
+   The upstream bundle contains a LICENSE file with the MIT License.
+   That license covers Supertone's sample code. It does not cover the
+   model weights. The model weights are covered by Open RAIL-M only.
+
+
+5. No affiliation
+
+   This repository is not affiliated with or endorsed by Supertone Inc. or the
+   sherpa-onnx project. The names are used only to identify where the files
+   come from.
+
+
+6. No warranty
+
+   The files are provided "AS IS", without warranties or conditions of any
+   kind. See paragraphs 9 and 10 of the LICENSE.
